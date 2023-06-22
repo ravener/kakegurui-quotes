@@ -1,6 +1,12 @@
 # Kakegurui Quotes
 A project to collect quotes from the anime series Kakegurui and allow easy access to it in data format and a web API.
 
+## API
+API base URL is <https://kakegurui-quotes.vercel.app/api>
+
+- `/quotes` Get a list of all quotes.
+- `/quotes/:id` Get a specific quote by ID.
+
 ## TODO
 This is very work in progress but here are some of my goals:
 
