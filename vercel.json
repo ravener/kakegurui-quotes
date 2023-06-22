@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/quotes/index.js": {
+      "includeFiles": "quotes.json"
+    },
+    "api/quotes/[id].js": {
+      "includeFiles": "quotes.json"
+    }
+  }
+}
