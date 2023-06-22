@@ -5,7 +5,7 @@ const fs = require('node:fs');
 
 function getQuotes() {
   if (quotes) return quotes;
-  quotes = fs.readFileSync('quotes.json');
+  quotes = JSON.parse(fs.readFileSync('quotes.json', 'utf8'));
   return quotes;
 }
 
