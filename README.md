@@ -12,7 +12,7 @@ This is very work in progress but here are some of my goals:
 
 - [ ] Track which episode each quote comes from.
 - [ ] Track the original Japanese words spoken.
-- [ ] A web interface that displays the quotes.
+- [x] A web interface that displays the quotes.
 - [ ] More and more quotes.
 
 ## Resources
