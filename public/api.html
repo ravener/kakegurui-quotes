@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Kakegurui Quotes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="sakura.css">
+  </head>
+  <body>
+    <h1>API</h1>
+    <p>Explore the sayings of the gambling addicts... in your own programs.</p>
+    <p><a href="https://github.com/ravener/kakegurui-quotes">GitHub</a> <a href="/api.html">API</a></p>
+    <p>Base URL: <a href="https://kakegurui-quotes.vercel.app/api">https://kakegurui-quotes.vercel.app/api</a></p>
+    <blockquote>
+      <b>GET</b> /quotes
+      <p>Get a list of all quotes.</p>
+      <pre><code>[
+  {
+    "id": 0,
+    "quote": "quote text",
+    "author": "name"
+  },
+  ...
+]</code></pre>
+    </blockquote>
+    <blockquote>
+      <b>GET</b> /quotes/<b>:id</b>
+      <p>Get a quote by ID.</p>
+    <pre><code>{
+  "id": 0,
+  "quote": "quote text",
+  "author": "name"
+}</code></pre>
+    </blockquote>
+  </body>
+</html>
