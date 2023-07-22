@@ -4,9 +4,12 @@ async function fetchQuotes() {
   return response.json();
 }
 
+const div = document.querySelector('.quotes');
+div.innerHTML = '<div class="lds-ripple"><div></div><div></div></div>';
+
 fetchQuotes()
   .then(quotes => {
-    const div = document.querySelector('.quotes');
+    div.innerHTML = "";
 
     for (const { quote, author } of quotes) {
       const blockquote = document.createElement('blockquote');
