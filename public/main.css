@@ -47,3 +47,23 @@
     opacity: 0;
   }
 }
+/* end of loading bar css */
+
+blockquote {
+  overflow: auto;
+}
+
+.thumbnail {
+  float: left;
+}
+
+.thumbnail img {
+  display: block;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.content {
+  margin-left: 150px;
+}

@@ -4,6 +4,10 @@ async function fetchQuotes() {
   return response.json();
 }
 
+function getName(name) {
+  return name.split(' ').map(w => w.toLowerCase()).join('_');
+}
+
 const div = document.querySelector('.quotes');
 div.innerHTML = '<div class="lds-ripple"><div></div><div></div></div>';
 
@@ -13,7 +17,7 @@ fetchQuotes()
 
     for (const { quote, author } of quotes) {
       const blockquote = document.createElement('blockquote');
-      blockquote.innerHTML = `<b>“</b>${quote}<b>”</b><p>- <i>${author}<i></p>`;
+      blockquote.innerHTML = `<div class="thumbnail"><img src="/img/${getName(author)}.png"></div><div class="content"><b>“</b>${quote}<b>”</b><p>- <i>${author}<i></p></div>`;
       div.appendChild(blockquote);
     }
   })
